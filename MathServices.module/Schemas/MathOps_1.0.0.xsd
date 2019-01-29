@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" targetNamespace="/T1524143701795Converted/JsonSchema" xmlns:tns="/T1524143701795Converted/JsonSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="GiveNewSchemaNameHere" type="tns:GiveNewSchemaNameHere"/>
+    <xs:complexType name="GiveNewSchemaNameHere">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="result" type="xs:string"/>
+            <xs:element minOccurs="0" name="resultString" type="xs:string"/>
+            <xs:element minOccurs="0" name="firstnum" type="xs:string"/>
+            <xs:element minOccurs="0" name="secondnum" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="SubtractResponse" type="tns:SubtractResponse"/>
+    <xs:complexType name="SubtractResponse">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="result" type="xs:string"/>
+            <xs:element minOccurs="0" name="resultString" type="xs:string"/>
+            <xs:element minOccurs="0" name="firstnum" type="xs:string"/>
+            <xs:element minOccurs="0" name="secondnum" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="AddResponse" type="tns:AddResponse"/>
+    <xs:complexType name="AddResponse">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="result" type="xs:string"/>
+            <xs:element minOccurs="0" name="resultString" type="xs:string"/>
+            <xs:element minOccurs="0" name="firstnum" type="xs:string"/>
+            <xs:element minOccurs="0" name="secondnum" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

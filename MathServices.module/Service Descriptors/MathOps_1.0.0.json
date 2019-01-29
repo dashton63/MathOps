@@ -1,0 +1,155 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "MathOps",
+    "x-lastModified": "Apr 19, 2018 06:13AM PST"
+  },
+  "paths": {
+    "/add/{firstnum}/{secondnum}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response",
+            "schema": {
+              "$ref": "#/definitions/AddResponse"
+            },
+            "examples": {
+              "application/json": {
+                "result": "123.45",
+                "resultString": "122.45 + 1.0 = 123.45",
+                "firstnum": "122.45",
+                "secondnum": "1.0"
+              }
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "firstnum",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "number",
+            "format": "double",
+            "default": 0
+          },
+          {
+            "name": "secondnum",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "number",
+            "format": "double",
+            "default": 0
+          }
+        ],
+        "operationId": "getAdd"
+      }
+    },
+    "/subtract/{firstnum}/{secondnum}": {
+      "get": {
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success response",
+            "schema": {
+              "$ref": "#/definitions/SubtractResponse"
+            }
+          }
+        },
+        "parameters": [
+          {
+            "name": "firstnum",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "number",
+            "format": "double",
+            "default": 0
+          },
+          {
+            "name": "secondnum",
+            "in": "path",
+            "description": "",
+            "required": true,
+            "type": "number",
+            "format": "double",
+            "default": 0
+          }
+        ],
+        "operationId": "getSubtract_firstnum__secondnum"
+      }
+    }
+  },
+  "definitions": {
+    "GiveNewSchemaNameHere": {
+      "type": "object",
+      "properties": {
+        "result": {
+          "type": "string",
+          "default": "123.45"
+        },
+        "resultString": {
+          "type": "string",
+          "default": "122.45 + 1.0 = 123.45"
+        },
+        "firstnum": {
+          "type": "string",
+          "default": "122.45"
+        },
+        "secondnum": {
+          "type": "string",
+          "default": "1.0"
+        }
+      }
+    },
+    "AddResponse": {
+      "type": "object",
+      "properties": {
+        "result": {
+          "type": "string",
+          "default": "123.45"
+        },
+        "resultString": {
+          "type": "string",
+          "default": "122.45 + 1.0 = 123.45"
+        },
+        "firstnum": {
+          "type": "string",
+          "default": "122.45"
+        },
+        "secondnum": {
+          "type": "string",
+          "default": "1.0"
+        }
+      }
+    },
+    "SubtractResponse": {
+      "type": "object",
+      "properties": {
+        "result": {
+          "type": "string",
+          "default": "121.45"
+        },
+        "resultString": {
+          "type": "string",
+          "default": "122.45 - 1.0 = 121.45"
+        },
+        "firstnum": {
+          "type": "string",
+          "default": "122.45"
+        },
+        "secondnum": {
+          "type": "string",
+          "default": "1.0"
+        }
+      }
+    }
+  }
+}

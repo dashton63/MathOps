@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_G4T2QEMLEeixoJvvz9SNEQ" targetNamespace="http://tns.tibco.com/bw/composite/MathServices.module" name="MathServices.module" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_qun1YkPTEeiImoJFXrhgLw" name="add" promote="ComponentMathOps/add">
+    <sca:interface.wsdl xmi:id="_quocckPTEeiImoJFXrhgLw" interface="http://xmlns.example.com/20180419091445PLT#wsdl.interface(add)"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_qupDgEPTEeiImoJFXrhgLw" name="RestService" path="/add/{firstnum}/{secondnum}" docBasePath="http://localhost:7777/MathServices.module" docResourcePath="Add" basePath="/" connector="mathservices.module.MathOps" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/MathOps_1.0.0.json">
+      <operation xmi:id="_qupDgUPTEeiImoJFXrhgLw" operationName="get" nickname="getAdd" httpMethod="GET" responseStyle="element">
+        <clientFormat>json</clientFormat>
+      </operation>
+      <parameters xmi:id="_qust4EPTEeiImoJFXrhgLw">
+        <parameterMapping xmi:id="_qust4UPTEeiImoJFXrhgLw" parameterName="firstnum" parameterType="Path" dataType="number#double" required="true" description=""/>
+        <parameterMapping xmi:id="_qutU8EPTEeiImoJFXrhgLw" parameterName="secondnum" parameterType="Path" dataType="number#double" required="true" description=""/>
+      </parameters>
+      <advancedConfig xmi:id="_tYxQMMflEei1S8X3UZsF7g" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_qupDgkPTEeiImoJFXrhgLw" bindingName="RestService"/>
+  </sca:service>
+  <sca:service xmi:id="_bfqtAkPVEeiImoJFXrhgLw" name="subtract" promote="ComponentMathOps/subtract">
+    <sca:interface.wsdl xmi:id="_bfqtBkPVEeiImoJFXrhgLw" interface="http://xmlns.example.com/20180419091445PLT#wsdl.interface(subtract1)" scaext:wsdlLocation="../Processes/mathservices/module/MathOps.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_bfrUEEPVEeiImoJFXrhgLw" name="RestService1" path="/subtract/{firstnum}/{secondnum}" docBasePath="http://localhost:7777/MathServices.module" docResourcePath="Add" basePath="/" connector="mathservices.module.MathOps" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/MathOps_1.0.0.json">
+      <operation xmi:id="_bfrUEUPVEeiImoJFXrhgLw" operationName="get" nickname="getSubtract_firstnum__secondnum" httpMethod="GET" responseStyle="element">
+        <clientFormat>json</clientFormat>
+      </operation>
+      <parameters xmi:id="_bfu-cEPVEeiImoJFXrhgLw">
+        <parameterMapping xmi:id="_bfu-cUPVEeiImoJFXrhgLw" parameterName="firstnum" parameterType="Path" dataType="number#double" required="true" description=""/>
+        <parameterMapping xmi:id="_bfu-ckPVEeiImoJFXrhgLw" parameterName="secondnum" parameterType="Path" dataType="number#double" required="true" description=""/>
+      </parameters>
+      <advancedConfig xmi:id="_tY0TgMflEei1S8X3UZsF7g" blockingQueueSize="2147483647"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_bfrUEkPVEeiImoJFXrhgLw" bindingName="RestService1"/>
+  </sca:service>
+  <sca:property xmi:id="_Hkr0EEMLEeixoJvvz9SNEQ" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Hk6dkEMLEeixoJvvz9SNEQ" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_Hk_9IEMLEeixoJvvz9SNEQ" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_HlFcsEMLEeixoJvvz9SNEQ" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_HlK8QEMLEeixoJvvz9SNEQ" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_HlP0wEMLEeixoJvvz9SNEQ" name="BW.CLOUD.PORT" type="XMLSchema:int" scalable="true"/>
+  <sca:property xmi:id="_HlVUUEMLEeixoJvvz9SNEQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_TRb7wHmVEeitvcJHqtu5yw" name="HttpHostName" type="XMLSchema:string" publicAccess="true" scalable="true"/>
+  <sca:component xmi:id="_oQEvUEPTEeiImoJFXrhgLw" name="ComponentMathOps" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_oQEvUUPTEeiImoJFXrhgLw" processName="mathservices.module.MathOps"/>
+    <sca:service xmi:id="_qun1YEPTEeiImoJFXrhgLw" name="add">
+      <sca:interface.wsdl xmi:id="_qun1YUPTEeiImoJFXrhgLw" interface="http://xmlns.example.com/20180419091445PLT#wsdl.interface(add)"/>
+    </sca:service>
+    <sca:service xmi:id="_bfqtAEPVEeiImoJFXrhgLw" name="subtract">
+      <sca:interface.wsdl xmi:id="_bfqtAUPVEeiImoJFXrhgLw" interface="http://xmlns.example.com/20180419091445PLT#wsdl.interface(subtract1)" scaext:wsdlLocation="../Processes/mathservices/module/MathOps.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>

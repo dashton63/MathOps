@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xs:schema xmlns:source="bw.rest" xmlns:tns="http://xmlns.example.com/Add/parameters" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://xmlns.example.com/Add/parameters">
+  <xs:element name="subtractGetParameters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="1" minOccurs="1" name="firstnum" type="xs:double"/>
+        <xs:element maxOccurs="1" minOccurs="1" name="secondnum" type="xs:double"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subtractPutParameters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="1" minOccurs="1" name="firstnum" type="xs:double"/>
+        <xs:element maxOccurs="1" minOccurs="1" name="secondnum" type="xs:double"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subtractPostParameters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="1" minOccurs="1" name="firstnum" type="xs:double"/>
+        <xs:element maxOccurs="1" minOccurs="1" name="secondnum" type="xs:double"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subtractDeleteParameters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="1" minOccurs="1" name="firstnum" type="xs:double"/>
+        <xs:element maxOccurs="1" minOccurs="1" name="secondnum" type="xs:double"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="subtractPatchParameters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="1" minOccurs="1" name="firstnum" type="xs:double"/>
+        <xs:element maxOccurs="1" minOccurs="1" name="secondnum" type="xs:double"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+    <xs:element name="subtract1GetParameters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="1" minOccurs="1" name="firstnum" type="xs:double"/>
+        <xs:element maxOccurs="1" minOccurs="1" name="secondnum" type="xs:double"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+    <xs:element name="subtract1PutParameters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="1" minOccurs="1" name="firstnum" type="xs:double"/>
+        <xs:element maxOccurs="1" minOccurs="1" name="secondnum" type="xs:double"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+    <xs:element name="subtract1PostParameters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="1" minOccurs="1" name="firstnum" type="xs:double"/>
+        <xs:element maxOccurs="1" minOccurs="1" name="secondnum" type="xs:double"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+    <xs:element name="subtract1DeleteParameters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="1" minOccurs="1" name="firstnum" type="xs:double"/>
+        <xs:element maxOccurs="1" minOccurs="1" name="secondnum" type="xs:double"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+    <xs:element name="subtract1PatchParameters">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="1" minOccurs="1" name="firstnum" type="xs:double"/>
+        <xs:element maxOccurs="1" minOccurs="1" name="secondnum" type="xs:double"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

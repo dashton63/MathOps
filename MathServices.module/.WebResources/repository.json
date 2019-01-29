@@ -1,0 +1,16 @@
+{
+    "records": [{
+        "name": "Cloud",
+        "items": [{
+            "localTimestamp": 1524143671000,
+            "localURI": "/MathServices.module/Service Descriptors/MathOps_1.0.0.json",
+            "disabled": false,
+            "remoteTimestamp": 1524158008000,
+            "localHash": "c7744576e3474962041680b5d8c3af1a46f56f75",
+            "remoteId": "20",
+            "remoteHash": "c7744576e3474962041680b5d8c3af1a46f56f75"
+        }],
+        "url": "https://integration.cloud.tibco.com:443"
+    }],
+    "resources": []
+}
